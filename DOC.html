@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Pod - Collaborative Learning App</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-gradient-blue {
+            background-image: linear-gradient(to right, #4a90e2, #7c93e4);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-gray-900">STUDY POD</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-blue-600 transition-colors">How It Works</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full transition-colors hidden md:block">
+                Download Now
+            </a>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none" aria-label="Toggle navigation">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-blue text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center justify-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+                Learn Together. Achieve More.
+            </h1>
+            <p class="text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">
+                The Study Pod App is an innovative mobile platform designed to connect university students with local study groups and peer tutors.
+            </p>
+            <a href="#" class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition-colors inline-block">
+                Get Started Today
+            </a>
+            <img src="https://placehold.co/800x450/e0e7ff/4a90e2?text=Group+of+Students+Studying" alt="Students studying together" class="mt-12 rounded-lg shadow-xl w-full max-w-4xl h-auto">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                Our Mission & Vision
+            </h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Empower students to achieve academic success by connecting them with like-minded peers, fostering collaborative learning, and building accountability networks. We envision becoming the world's most trusted and widely-used collaborative learning platform.
+            </p>
+            <img src="https://placehold.co/800x400/e0e7ff/4a90e2?text=Problem+and+Solution+Diagram" alt="Problem and solution diagram" class="mt-8 mb-12 rounded-lg shadow-md w-full h-auto">
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">The Problem</h3>
+                    <p class="text-gray-600">
+                        Many college and university students face challenges such as isolation, lack of motivation, and limited access to peers with similar academic goals. Traditional study methods often lack flexibility and a sense of community.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">The Solution</h3>
+                    <p class="text-gray-600">
+                        Study Pod transforms learning into a collaborative, engaging, and effective experience by providing a comprehensive ecosystem of tools and support. Our platform connects students with the perfect peers and expert tutors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-gray-100 py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                Core Features
+            </h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                A suite of powerful tools designed to connect students and enhance their learning experience.
+            </p>
+            <img src="https://placehold.co/800x400/e0e7ff/4a90e2?text=Mockup+of+the+App+Interface" alt="App interface mockup" class="mt-8 mb-12 rounded-lg shadow-md w-full h-auto">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Personalized Matching</h3>
+                    <p class="text-gray-600">
+                        Our AI-driven algorithm connects students with peers based on subjects, schedules, and study styles.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v1a6 6 0 01-12 0v-1a6 6 0 0112 0zM12 11a4 4 0 100 8 4 4 0 000-8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Peer Tutoring Marketplace</h3>
+                    <p class="text-gray-600">
+                        A platform for students to find and book experienced peer tutors for specific subjects and topics.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Accountability Partners</h3>
+                    <p class="text-gray-600">
+                        Pairs students with peers to encourage consistency, motivation, and shared academic goals.
+                    </p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Virtual Study Rooms</h3>
+                    <p class="text-gray-600">
+                        Integrated video chat and whiteboard tools for seamless remote and hybrid study sessions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gamification & Community Section (New) -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                Level Up Your Learning
+            </h2>
+            <p class="text-lg text-gray-600 mb-8">
+                With Study Pod, learning is not a chore—it's a journey. Our gamified features and vibrant community keep you engaged and motivated.
+            </p>
+            <div class="grid sm:grid-cols-2 gap-8 text-left">
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-start">
+                    <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-blue-500 text-white rounded-full mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.98 1.25-.71.38-1.5-.47-1.5-.47V18c-1.11-.02-1.89-.8-2-2-.5-.5-1-1-1-2"/><path d="M14 14.66V17c0 .55.47.98.98 1.25.71.38 1.5-.47 1.5-.47V18c1.11-.02 1.89-.8 2-2-.5-.5-1-1-1-2"/><path d="M8 18v1a4 4 0 0 0 8 0v-1"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">Gamified Learning</h3>
+                        <p class="text-gray-600">
+                            Earn rewards and compete on leaderboards to increase your motivation and retention.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-start">
+                    <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-blue-500 text-white rounded-full mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">Community-Driven</h3>
+                        <p class="text-gray-600">
+                            Find mutual support and a culture of collaboration to help you succeed together.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section (New) -->
+    <section id="how-it-works" class="bg-gray-100 py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-5xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                Your Journey to Success
+            </h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Getting started with Study Pod is simple. Follow these steps to unlock a new way of learning.
+            </p>
+            <img src="https://placehold.co/1000x250/e0e7ff/4a90e2?text=Set+Preferences+->+Get+Matched+->+Join+Group+->+Track+Progress" alt="How it works infographic" class="mt-8 mb-12 rounded-lg shadow-md w-full h-auto">
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-gradient-blue text-white py-16 md:py-24 text-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                Ready to transform your study habits?
+            </h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto">
+                Join the Study Pod community and start collaborating with peers to achieve your academic goals.
+            </p>
+            <a href="#" class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition-colors inline-block">
+                Download the App
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 STUDY POD. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a> |
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
